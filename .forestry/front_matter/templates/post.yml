@@ -57,5 +57,3 @@ fields:
   - type: boolean
     name: hidden
     label: hidden
-pages:
-- content/posts/credit-default-prediction.md
