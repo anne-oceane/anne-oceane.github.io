@@ -45,9 +45,6 @@ languages:
                 - name: Projects
                   url: projects
                   weight: 3
-                - name: Connector
-                  url: connector/
-                  weight: 4
                 - name: Search
                   url: search/
                   weight: 10
@@ -66,8 +63,8 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Kanvaly website on AI"
-    author: Kanvaly Fadiga
+    description: "Océane website"
+    author: Océane Koffi
     # author: ["Me", "You"] # multiple authors
 
     defaultTheme: auto
@@ -84,8 +81,8 @@ params:
 
     profileMode:
         enabled: false
-        title: Kanvaly Fadiga
-        imageUrl: "images/kanva.jpeg"
+        title: Océane Koffi
+        #imageUrl: "images/"
         imageTitle: my image
         # imageWidth: 120
         # imageHeight: 120
@@ -96,15 +93,15 @@ params:
               url: tags
 
     homeInfoParams:
-        Title: "Kanvaly Fadiga"
+        Title: "Océane Koffi"
         Content: >
-            Hey friends. I am Kanvaly Fadiga. On this site we will talk about AI
+            Hey friends. I am Océane Koffi.
 
     socialIcons:
         - name: github
-          url: "https://github.com/fkanvaly"
+          url: "https://github.com/anne-oceane"
         - name: linkedin
-          url: "https://www.linkedin.com/in/kanvaly-fadiga/"
+          url: "https://www.linkedin.com/in/oc%C3%A9ane-koffi-791917177/"
 
     # label:
     #     text: "Home"
