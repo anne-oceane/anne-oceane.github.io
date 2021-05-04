@@ -1,6 +1,6 @@
 ---
 author: Océane Koffi
-title: "Credit default prediction"
+title: Credit default prediction
 date: 2021-04-07
 description: predict credit default risk
 tags:
@@ -19,8 +19,8 @@ cover:
   relative: false
   hidden: false
 comments: false
----
 
+---
 {{< rawhtml >}}
 <script src="https://cdn.jsdelivr.net/npm/vega@5.16.1"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.16.7"></script>
@@ -37,7 +37,6 @@ Credit risk is defined as the risk that a borrower will default on its commitmen
 
 Here we try to predict the risk for people to make default giving information about them.
 
-
 # ⚙️ Difficulty
 
 Most of the time the data we have to learn is unbalanced. In our case for example there are less than 10% of people who have made credits. This makes the training more complicated and leads us to use specialised training techniques for this kind of data.
@@ -49,9 +48,7 @@ Most of the time the data we have to learn is unbalanced. In our case for exampl
 # 📈 The data description
 
 * The dataset includes 5380 uniques clients with 19 differents informations .
-
 * There are many (13) categorical variables ( Custuomer_Type , Education_level , Marital_status …)  and only 5 numerical data.
-
 * Many of the explanatory variables are categorical. From then on we understand that one of the determining factors will be the encoding of these variable ,we will discuss this part in the feature engineering section.
 
 **Exploration**
@@ -60,14 +57,13 @@ Most of the time the data we have to learn is unbalanced. In our case for exampl
 <div id="explore"></div>
 </div>
 
-* The customer category type *”P_client”* is an important factor in discriminating those who are most likely to default.
-* We also notice that individuals with an *”is_closed_date”* of the product are more likely to default than those who do not.
-* Moreover the fact that he is in a *”Marital_status”* couple gives him more chance to default than if he was not.
+* The customer category type _”P_client”_ is an important factor in discriminating those who are most likely to default.
+* We also notice that individuals with an _”is_closed_date”_ of the product are more likely to default than those who do not.
+* Moreover the fact that he is in a _”Marital_status”_ couple gives him more chance to default than if he was not.
 
 **Feature importance**
 
-Features importances show that the new features are *relevants*, so we will use them in training our models to predict credit default.
-
+Features importances show that the new features are _relevants_, so we will use them in training our models to predict credit default.
 
 # 🤖 Our models
 
@@ -82,18 +78,23 @@ We explore two sampling methods:
 
 And the best the best sampling method was random over sampling.
 
-**Best Model**
+**Model**
 
 We train 5 models using this sampling model:
+
 * XGBClassifier
+* AdaboostClassifier
+* LBGMClassifier
+* LogisticRegression
+* MLPClassifier
+* RandomForestClassifier
 
 # 🥊 Result
 
-We train many models using this sampling methods and bellow is our result : 
+We train many models using this sampling methods and bellow is our result :
 
 <div class="col d-flex justify-content-center">
 <div id="result"></div>
 </div>
-
 
 <script src="/default.js"></script>
