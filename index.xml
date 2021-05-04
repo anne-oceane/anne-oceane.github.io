@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>oceane</title>
+    <link>https://anne-oceane.github.io/</link>
+    <description>Recent content on oceane</description>
+    <image>
+      <url>https://anne-oceane.github.io/cover.webp</url>
+      <link>https://anne-oceane.github.io/cover.webp</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 07 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://anne-oceane.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Credit default prediction</title>
+      <link>https://anne-oceane.github.io/posts/default/</link>
+      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://anne-oceane.github.io/posts/default/</guid>
+      <description>predict credit default risk</description>
+    </item>
+    
+    
+    
+  </channel>
+</rss>
