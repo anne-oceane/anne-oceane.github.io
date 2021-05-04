@@ -1,0 +1,61 @@
+---
+label: post
+hide_body: true
+fields:
+- type: text
+  name: author
+  label: author
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: description
+  label: description
+- type: list
+  name: tags
+  label: tags
+- type: list
+  name: categories
+  label: categories
+- type: list
+  name: series
+  label: series
+- type: list
+  name: aliases
+  label: aliases
+- type: boolean
+  name: ShowToc
+  label: ShowToc
+- type: boolean
+  name: math
+  label: math
+- type: boolean
+  name: TocOpen
+  label: TocOpen
+- type: text
+  name: weight
+  label: weight
+- type: field_group
+  name: cover
+  label: cover
+  fields:
+  - type: file
+    name: image
+    label: image
+  - type: text
+    name: alt
+    label: alt
+  - type: text
+    name: caption
+    label: caption
+  - type: boolean
+    name: relative
+    label: relative
+  - type: boolean
+    name: hidden
+    label: hidden
+pages:
+- content/posts/credit-default-prediction.md
